@@ -1,4 +1,4 @@
-# Send email with Python workers using Docker
+# Send emails with Python workers using Docker
 
 ## architecture
 
