@@ -1,1 +1,5 @@
-# send-emails-worker-python
+# Send email with Python workers using Docker
+
+## architecture
+
+![./project.png]

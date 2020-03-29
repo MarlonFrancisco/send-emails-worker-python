@@ -1,0 +1,77 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf8">
+        
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: sans-serif;
+            }
+            body, .container {
+                width: 100vw;
+                height: 100vh;
+            }
+            
+            .container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .box-form {
+                width: 500px;
+            }
+            
+            input, textarea {
+                width: 100%;
+                border: none;
+                outline: none;
+                padding: 10px;
+                border-bottom: 2px solid blue;
+            }
+            
+            label {
+                display: block;
+                margin-bottom: 10px;
+            }
+            
+            .form-group {
+                margin: 20px 0;
+            }
+            
+            button {
+                border: none;
+                background: blue;
+                color: #fff;
+                padding: 10px 25px;
+                font-weight: 700;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="box-form">
+                <h2>Enviar email</h2>
+                <form action="http://localhost/api" method="POST">
+                    <div class="form-group">
+                        <label for="assunto">Subject</label>
+                        <input name="subject" type="text" />
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="menssagem">Message</label>
+                        <textarea placeholder="message" name="message" rows="5"></textarea>
+                    </div>
+                    
+                    <button class="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
